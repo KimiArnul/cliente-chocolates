@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgBar" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#24130d"/>
+      <stop offset="65%" stop-color="#140804"/>
+      <stop offset="100%" stop-color="#0a0301"/>
+    </radialGradient>
+    <linearGradient id="chocSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b1e15"/>
+      <stop offset="40%" stop-color="#2a130c"/>
+      <stop offset="100%" stop-color="#190905"/>
+    </linearGradient>
+    <linearGradient id="goldBar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2b3"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#80530f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgBar)"/>
+
+  <!-- Bar Shadow -->
+  <rect x="230" y="240" width="360" height="340" rx="16" fill="#000000" opacity="0.6" transform="rotate(-6, 400, 400)"/>
+
+  <!-- Chocolate Bar Body (Angled) -->
+  <g transform="rotate(-6, 400, 400)">
+    <rect x="220" y="210" width="360" height="340" rx="16" fill="url(#chocSurface)" stroke="#4a281e" stroke-width="3"/>
+    
+    <!-- Squares Grid -->
+    <!-- Row 1 -->
+    <rect x="245" y="235" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <rect x="355" y="235" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <rect x="465" y="235" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <!-- Row 2 -->
+    <rect x="245" y="335" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <rect x="355" y="335" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <rect x="465" y="335" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <!-- Row 3 -->
+    <rect x="245" y="435" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <rect x="355" y="435" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+    <rect x="465" y="435" width="95" height="85" rx="8" fill="#33170f" stroke="#1d0a05" stroke-width="4"/>
+
+    <!-- Gold Foil Wrapper Peeking -->
+    <polygon points="220,440 270,550 220,550" fill="url(#goldBar)"/>
+    <polygon points="580,210 520,210 580,280" fill="url(#goldBar)"/>
+
+    <!-- Cocoa Bean Engraving on Center Tile -->
+    <path d="M402,360 C416,366 422,382 414,394 C406,406 390,402 384,390 C380,378 392,362 402,360 Z" fill="#d4af37" opacity="0.85"/>
+    <line x1="390" y1="392" x2="410" y2="370" stroke="#220e07" stroke-width="2"/>
+  </g>
+
+  <!-- Title Bottom -->
+  <g transform="translate(400, 710)" text-anchor="middle" opacity="0.85">
+    <text font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="url(#goldBar)">CHOCOLATES SV</text>
+    <text y="24" font-family="'Poppins', sans-serif" font-size="11" letter-spacing="2" fill="#d4af37" opacity="0.7">BARRA ORIGEN MADAGASCAR 70%</text>
+  </g>
+</svg>

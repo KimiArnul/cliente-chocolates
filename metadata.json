@@ -1,0 +1,8 @@
+{
+  "name": "FullStack Dev Assistant",
+  "description": "Expert coding partner specializing in React and .NET 10 integration for seamless full-stack development and API consumption.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

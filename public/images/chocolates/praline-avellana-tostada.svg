@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgHazel" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2c1a12"/>
+      <stop offset="65%" stop-color="#180c07"/>
+      <stop offset="100%" stop-color="#0a0402"/>
+    </radialGradient>
+    <radialGradient id="hazelnut" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#d49b6a"/>
+      <stop offset="60%" stop-color="#9e5e2e"/>
+      <stop offset="100%" stop-color="#593010"/>
+    </radialGradient>
+    <radialGradient id="pralineChoc" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4d281e"/>
+      <stop offset="65%" stop-color="#2b120a"/>
+      <stop offset="100%" stop-color="#120502"/>
+    </radialGradient>
+    <linearGradient id="goldH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#80530f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgHazel)"/>
+
+  <!-- Pedestal shadow -->
+  <ellipse cx="400" cy="580" rx="220" ry="38" fill="#000000" opacity="0.7"/>
+
+  <!-- Praline dome base -->
+  <g transform="translate(400, 420)">
+    <ellipse cx="0" cy="50" rx="140" ry="40" fill="#140603"/>
+    <path d="M-130,40 C-130,-70 130,-70 130,40 Z" fill="url(#pralineChoc)" stroke="#522a1f" stroke-width="2"/>
+    
+    <!-- Swirl of caramel ganache -->
+    <path d="M-80,20 Q0,-40 80,0 Q30,-70 -30,-50" stroke="#b36200" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Whole Roasted Hazelnuts on Top -->
+  <g transform="translate(400, 310)">
+    <!-- Hazelnut 1 -->
+    <circle cx="-35" cy="15" r="38" fill="url(#hazelnut)"/>
+    <ellipse cx="-42" cy="5" rx="10" ry="6" fill="#fadcbe" opacity="0.6"/>
+    <!-- Hazelnut 2 (center high) -->
+    <circle cx="20" cy="-10" r="42" fill="url(#hazelnut)"/>
+    <ellipse cx="12" cy="-20" rx="12" ry="7" fill="#fadcbe" opacity="0.6"/>
+  </g>
+
+  <!-- Crushed caramelized hazelnut sprinkles -->
+  <g fill="#e0a96d">
+    <rect x="330" y="440" width="8" height="6" rx="2" transform="rotate(30, 330, 440)"/>
+    <rect x="360" y="460" width="10" height="7" rx="2" transform="rotate(15, 360, 460)"/>
+    <rect x="420" y="450" width="9" height="7" rx="2" transform="rotate(45, 420, 450)"/>
+    <rect x="455" y="435" width="11" height="6" rx="2" transform="rotate(-20, 455, 435)"/>
+  </g>
+
+  <!-- Gold leaf touch -->
+  <polygon points="415,280 430,270 435,285 422,290" fill="url(#goldH)"/>
+
+  <g transform="translate(400, 710)" text-anchor="middle" opacity="0.85">
+    <text font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="url(#goldH)">CHOCOLATES SV</text>
+    <text y="24" font-family="'Poppins', sans-serif" font-size="11" letter-spacing="2" fill="#d4af37" opacity="0.7">PRALINÉ DE AVELLANA PIAMONTE</text>
+  </g>
+</svg>

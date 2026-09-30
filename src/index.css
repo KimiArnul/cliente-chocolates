@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  /* ChocolatesSV Color System */
+  --color-surface: #fff8f6;
+  --color-surface-dim: #dfd9d7;
+  --color-surface-bright: #fff8f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9f2f0;
+  --color-surface-container: #f3ecea;
+  --color-surface-container-high: #ede7e5;
+  --color-surface-container-highest: #e8e1df;
+  --color-on-surface: #1d1b1a;
+  --color-on-surface-variant: #504442;
+  --color-inverse-surface: #33302f;
+  --color-inverse-on-surface: #f6efed;
+  --color-outline: #827472;
+  --color-outline-variant: #d3c3c0;
+  --color-surface-tint: #745753;
+  --color-primary: #271310;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #3e2723;
+  --color-on-primary-container: #ae8c87;
+  --color-inverse-primary: #e3beb8;
+  --color-secondary: #735c00;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fddd7c;
+  --color-on-secondary-container: #776005;
+  --color-tertiary: #181816;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #2d2d2b;
+  --color-on-tertiary-container: #969491;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdad5;
+  --color-primary-fixed-dim: #e3beb8;
+  --color-on-primary-fixed: #2b1613;
+  --color-on-primary-fixed-variant: #5b403c;
+  --color-secondary-fixed: #ffe085;
+  --color-secondary-fixed-dim: #e3c466;
+  --color-on-secondary-fixed: #231b00;
+  --color-on-secondary-fixed-variant: #574500;
+  --color-tertiary-fixed: #e5e2de;
+  --color-tertiary-fixed-dim: #c9c6c3;
+  --color-on-tertiary-fixed: #1c1c1a;
+  --color-on-tertiary-fixed-variant: #474744;
+  --color-background: #fff8f6;
+  --color-on-background: #1d1b1a;
+  --color-surface-variant: #e8e1df;
+  --color-success: #2E7D32;
+  --color-gold-cta: #D4AF37;
+
+  /* Typography */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Poppins", system-ui, sans-serif;
+  --font-display-lg: "Playfair Display", Georgia, serif;
+  --font-display-lg-mobile: "Playfair Display", Georgia, serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-body-lg: "Poppins", system-ui, sans-serif;
+  --font-body-md: "Poppins", system-ui, sans-serif;
+  --font-label-md: "Poppins", system-ui, sans-serif;
+  --font-caption: "Poppins", system-ui, sans-serif;
+
+  /* Spacing & Layout */
+  --spacing-base: 8px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+  --spacing-section-gap: 96px;
+  --max-width-container-max: 1280px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font-family: var(--font-body);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.material-symbols-outlined.fill,
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.text-display-lg {
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.text-display-lg-mobile {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.text-headline-md {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.text-body-lg {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-body-md {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-label-md {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.text-caption {
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.ambient-shadow {
+  box-shadow: 0 4px 20px rgba(62, 39, 35, 0.08);
+}
+
+.cart-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.cart-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cart-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d3c3c0;
+  border-radius: 4px;
+}
+
+/* Hide number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

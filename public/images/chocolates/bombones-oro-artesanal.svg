@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGold" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#211511"/>
+      <stop offset="70%" stop-color="#110705"/>
+      <stop offset="100%" stop-color="#080201"/>
+    </radialGradient>
+    <linearGradient id="goldBonbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5c0"/>
+      <stop offset="35%" stop-color="#e5c058"/>
+      <stop offset="70%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#6b4703"/>
+    </linearGradient>
+    <radialGradient id="darkChoc" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3d1f17"/>
+      <stop offset="70%" stop-color="#1e0c08"/>
+      <stop offset="100%" stop-color="#0b0302"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGold)"/>
+  
+  <!-- Pedestal -->
+  <ellipse cx="400" cy="590" rx="230" ry="40" fill="#000000" opacity="0.7"/>
+  <ellipse cx="400" cy="565" rx="200" ry="30" fill="#1f1816" stroke="#d4af37" stroke-width="1.5"/>
+
+  <!-- Left Bonbon (Faceted Diamond cut) -->
+  <g transform="translate(290, 410)">
+    <polygon points="0,-70 55,-35 55,45 0,80 -55,45 -55,-35" fill="url(#darkChoc)" stroke="#4a241b" stroke-width="2"/>
+    <!-- Gold dust brush -->
+    <path d="M-40,-25 Q0,-60 40,-25 Q20,10 -40,-25 Z" fill="url(#goldBonbon)" opacity="0.8"/>
+  </g>
+
+  <!-- Right Bonbon (Dome with gold brush) -->
+  <g transform="translate(510, 420)">
+    <ellipse cx="0" cy="30" rx="65" ry="30" fill="#0f0503"/>
+    <path d="M-60,20 C-60,-50 60,-50 60,20 Z" fill="url(#darkChoc)"/>
+    <!-- Splatter of gold -->
+    <circle cx="-15" cy="-20" r="10" fill="url(#goldBonbon)"/>
+    <circle cx="10" cy="-30" r="6" fill="url(#goldBonbon)"/>
+    <circle cx="25" cy="-10" r="12" fill="url(#goldBonbon)"/>
+    <path d="M-30,-15 Q5,-45 40,-5" stroke="url(#goldBonbon)" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Center Master Bonbon (Spherical with Full Gold Leaf Crown) -->
+  <g transform="translate(400, 360)">
+    <ellipse cx="0" cy="80" rx="85" ry="25" fill="#000000" opacity="0.6"/>
+    <circle cx="0" cy="0" r="85" fill="url(#darkChoc)"/>
+    <!-- Gold leaf drape -->
+    <path d="M-60,-40 C-30,-75 30,-75 60,-40 C75,0 40,40 10,60 C-20,40 -70,10 -60,-40 Z" fill="url(#goldBonbon)" opacity="0.95"/>
+    <ellipse cx="-20" cy="-25" rx="20" ry="10" fill="#ffffff" opacity="0.4" transform="rotate(-30, -20, -25)"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(400, 710)" text-anchor="middle" opacity="0.85">
+    <text font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="url(#goldBonbon)">CHOCOLATES SV</text>
+    <text y="24" font-family="'Poppins', sans-serif" font-size="11" letter-spacing="2" fill="#d4af37" opacity="0.7">COLECCIÓN BOMBONES DE ORO</text>
+  </g>
+</svg>

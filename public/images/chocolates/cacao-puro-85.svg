@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgBlack" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1c0f0a"/>
+      <stop offset="65%" stop-color="#0e0503"/>
+      <stop offset="100%" stop-color="#040101"/>
+    </radialGradient>
+    <radialGradient id="podGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#a6541d"/>
+      <stop offset="60%" stop-color="#6e2d09"/>
+      <stop offset="100%" stop-color="#381302"/>
+    </radialGradient>
+    <linearGradient id="goldPure" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#80530f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgBlack)"/>
+
+  <!-- Shadow -->
+  <ellipse cx="400" cy="570" rx="220" ry="35" fill="#000000" opacity="0.8"/>
+
+  <!-- Raw Cacao Pod and 85% Dark Chocolate Shards -->
+  <g transform="translate(400, 390)">
+    <!-- Pod silhouette -->
+    <path d="M-150,60 C-180,-40 -100,-120 -10,-100 C70,-80 140,0 120,80 C100,140 -20,130 -110,100 Z" fill="url(#podGrad)" stroke="#421a05" stroke-width="3" transform="rotate(-25, 0, 0)"/>
+
+    <!-- Pod grooves -->
+    <path d="M-100,-30 Q-20,0 60,30" stroke="#ff8c42" stroke-width="3" fill="none" opacity="0.4" transform="rotate(-25, 0, 0)"/>
+    <path d="M-120,10 Q-30,40 50,70" stroke="#ff8c42" stroke-width="3" fill="none" opacity="0.3" transform="rotate(-25, 0, 0)"/>
+
+    <!-- Sharp dark chocolate block broken in front -->
+    <polygon points="-40,40 60,-20 160,50 90,120" fill="#170804" stroke="#401a0e" stroke-width="3"/>
+    <polygon points="-40,40 30,100 90,120 60,-20" fill="#291007"/>
+
+    <!-- Fine cacao powder spray -->
+    <circle cx="20" cy="110" r="4" fill="#a6541d" opacity="0.6"/>
+    <circle cx="50" cy="130" r="5" fill="#a6541d" opacity="0.6"/>
+    <circle cx="-10" cy="90" r="6" fill="#a6541d" opacity="0.5"/>
+    <circle cx="120" cy="90" r="4.5" fill="#a6541d" opacity="0.7"/>
+
+    <!-- Gold Foil leaf touch -->
+    <polygon points="120,40 135,30 140,48 126,54" fill="url(#goldPure)"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(400, 710)" text-anchor="middle" opacity="0.85">
+    <text font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="url(#goldPure)">CHOCOLATES SV</text>
+    <text y="24" font-family="'Poppins', sans-serif" font-size="11" letter-spacing="2" fill="#d4af37" opacity="0.7">CACAO PURO SALVADOREÑO 85%</text>
+  </g>
+</svg>

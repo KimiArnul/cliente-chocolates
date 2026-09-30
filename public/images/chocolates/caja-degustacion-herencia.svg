@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgBox" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1f1410"/>
+      <stop offset="65%" stop-color="#120805"/>
+      <stop offset="100%" stop-color="#080201"/>
+    </radialGradient>
+    <linearGradient id="boxVelvet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#381d16"/>
+      <stop offset="50%" stop-color="#240f09"/>
+      <stop offset="100%" stop-color="#120502"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a6"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8c5814"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgBox)"/>
+
+  <!-- Shadow under luxury box -->
+  <ellipse cx="400" cy="560" rx="260" ry="40" fill="#000000" opacity="0.75"/>
+
+  <!-- Open Gift Box Lower Body (isometric angle) -->
+  <g transform="translate(400, 390)">
+    <!-- Box Body -->
+    <rect x="-220" y="-130" width="440" height="260" rx="14" fill="url(#boxVelvet)" stroke="#d4af37" stroke-width="2"/>
+    
+    <!-- 8 Truffles Grid inside velvet inserts -->
+    <!-- Row 1 -->
+    <circle cx="-140" cy="-60" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="-140" cy="-60" r="26" fill="#3b1d16"/>
+    <circle cx="-140" cy="-60" r="8" fill="url(#goldRibbon)"/>
+
+    <circle cx="-45" cy="-60" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="-45" cy="-60" r="26" fill="#4d2c22"/>
+    <rect x="-50" y="-65" width="10" height="10" fill="#fff" opacity="0.8"/>
+
+    <circle cx="50" cy="-60" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="50" cy="-60" r="26" fill="#f0e2c8"/>
+    <circle cx="50" cy="-60" r="10" fill="#e0a96d"/>
+
+    <circle cx="145" cy="-60" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="145" cy="-60" r="26" fill="#2b110b"/>
+    <polygon points="140,-65 152,-60 145,-52" fill="url(#goldRibbon)"/>
+
+    <!-- Row 2 -->
+    <circle cx="-140" cy="50" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="-140" cy="50" r="26" fill="#f0e2c8"/>
+    <circle cx="-140" cy="50" r="6" fill="#3b1d16"/>
+
+    <circle cx="-45" cy="50" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="-45" cy="50" r="26" fill="#381d16"/>
+    <polygon points="-50,45 -38,50 -45,58" fill="url(#goldRibbon)"/>
+
+    <circle cx="50" cy="50" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="50" cy="50" r="26" fill="#210c08"/>
+    <rect x="45" y="45" width="10" height="10" fill="#fff" opacity="0.8"/>
+
+    <circle cx="145" cy="50" r="32" fill="#170704" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="145" cy="50" r="26" fill="#4a251b"/>
+    <circle cx="145" cy="50" r="12" fill="url(#goldRibbon)"/>
+
+    <!-- Satin Gold Ribbon draping over box edge -->
+    <path d="M-220,-20 Q-100,-40 220,-20" stroke="url(#goldRibbon)" stroke-width="12" fill="none" opacity="0.9"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(400, 710)" text-anchor="middle" opacity="0.85">
+    <text font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="url(#goldRibbon)">CHOCOLATES SV</text>
+    <text y="24" font-family="'Poppins', sans-serif" font-size="11" letter-spacing="2" fill="#d4af37" opacity="0.7">CAJA DE DEGUSTACIÓN HERENCIA • 8 PIEZAS</text>
+  </g>
+</svg>
