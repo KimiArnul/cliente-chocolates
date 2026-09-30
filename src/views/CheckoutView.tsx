@@ -445,7 +445,20 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
                       <option value="CDMX">CDMX / Ciudad de México</option>
                       <option value="Madrid">Madrid</option>
                       <option value="Barcelona">Barcelona</option>
+                      <option value="Ahuachapán">Ahuachapán</option>
+                      <option value="Cabañas">Cabañas</option>
+                      <option value="Chalatenango">Chalatenango</option>
+                      <option value="Cuscatlán">Cuscatlán</option>
+                      <option value="La Libertad">La Libertad</option>
+                      <option value="La Paz">La Paz</option>
+                      <option value="La Unión">La Unión</option>
+                      <option value="Morazán">Morazán</option>
                       <option value="San Salvador">San Salvador</option>
+                      <option value="San Miguel">San Miguel</option>
+                      <option value="San Vicente">San Vicente</option>
+                      <option value="Santa Ana">Santa Ana</option>
+                      <option value="Sonsonate">Sonsonate</option>
+                      <option value="Usulután">Usulután</option>
                       <option value="Valencia">Valencia</option>
                     </select>
                     <span className="material-symbols-outlined absolute right-2 top-3 text-on-surface-variant pointer-events-none">
@@ -538,10 +551,15 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
                       <input
                         type="text"
                         required
+                        inputMode="numeric"
+                        autoComplete="cc-number"
+                        maxLength={23}
                         value={payment.cardNumber}
-                        onChange={(e) =>
-                          setPayment({ ...payment, cardNumber: e.target.value })
-                        }
+                        onChange={(e) => {
+                          const digits = e.target.value.replace(/\D/g, '').slice(0, 19);
+                          const formattedNumber = digits.match(/.{1,4}/g)?.join(' ') || '';
+                          setPayment({ ...payment, cardNumber: formattedNumber });
+                        }}
                         placeholder="0000 0000 0000 0000"
                         className={`${inputGoldClass} pl-10 tabular-nums`}
                       />

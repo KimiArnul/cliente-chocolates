@@ -276,23 +276,7 @@ El frontend consume la API siguiendo los contratos exactos documentados:
 
 ---
 
-## 7. Endpoints Preparados para Futura Implementación
-
-Tal como se solicitó, la arquitectura frontend y el servicio `ChocolatesSvApi` ya cuentan con los métodos y adaptadores listos para consumir los controladores cuando sean implementados en C# (.NET):
-
-1. **Seguimiento de Pedidos**:
-   - `GET /api/orders/tracking/{numeroOrden}` o `POST /api/orders/tracking`
-   - Función en frontend: `ChocolatesSvApi.trackOrder(numeroOrden, correo)`
-2. **Contenido Institucional**:
-   - `GET /api/content/about`
-   - Función en frontend: `ChocolatesSvApi.getAboutContent()`
-3. **Preguntas Frecuentes**:
-   - `GET /api/content/faq`
-   - Función en frontend: `ChocolatesSvApi.getFaqList()`
-
----
-
-## 8. Scripts Disponibles
+## 7. Scripts Disponibles
 
 | Comando | Descripción |
 | :--- | :--- |
@@ -303,7 +287,7 @@ Tal como se solicitó, la arquitectura frontend y el servicio `ChocolatesSvApi` 
 
 ---
 
-## 9. Solución de Problemas Frecuentes
+## 8. Solución de Problemas Frecuentes
 
 1. **Error de certificado SSL en Kestrel**:
   - Ejecuta `dotnet dev-certs https --trust`.
@@ -312,9 +296,7 @@ Tal como se solicitó, la arquitectura frontend y el servicio `ChocolatesSvApi` 
 
 ---
 
-## 10. Guías y Documentos Complementarios
+## 9. Guías y Documentos Complementarios
 
-Para profundizar en aspectos específicos del proyecto, consulta los documentos complementarios:
-
-- 📘 **[GUIA_EJECUCION_LOCAL.md](./GUIA_EJECUCION_LOCAL.md)**: Manual exhaustivo paso a paso para ejecutar el Frontend y la API de .NET 10 en simultáneo en local, modos de proxy, configuración de Kestrel y resolución de incidencias.
+Para profundizar en aspectos específicos del proyecto, consulta los documentos complementarios con referente a instalación y manuales de usuario.
 
