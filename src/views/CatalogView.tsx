@@ -187,14 +187,14 @@ export const CatalogView: React.FC<CatalogViewProps> = ({
                 Rango de Precio
               </h3>
               <span className="font-caption text-caption text-primary font-semibold tabular-nums">
-                Hasta ${maxPrice}
+                Hasta ${maxPrice.toFixed(2)}
               </span>
             </div>
             <input
               type="range"
-              min={15}
+              min={0.5}
               max={150}
-              step={5}
+              step={0.5}
               value={maxPrice}
               onChange={(e) => {
                 setCurrentPage(1);
@@ -204,7 +204,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({
               className="w-full h-1 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary"
             />
             <div className="flex justify-between mt-2 font-caption text-caption text-on-surface-variant tabular-nums">
-              <span>$10</span>
+              <span>$0.50</span>
               <span>$150+</span>
             </div>
           </div>

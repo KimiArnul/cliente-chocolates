@@ -470,10 +470,14 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
                 <input
                   type="tel"
                   required
+                  inputMode="tel"
+                  autoComplete="tel"
                   value={shipping.phone}
-                  onChange={(e) =>
-                    setShipping({ ...shipping, phone: e.target.value })
-                  }
+                  onChange={(e) => {
+                    const digits = e.target.value.replace(/\D/g, '');
+                    const formattedPhone = digits.match(/.{1,4}/g)?.join(' ') || '';
+                    setShipping({ ...shipping, phone: formattedPhone });
+                  }}
                   placeholder="Teléfono"
                   className={inputBaseClass}
                 />
@@ -596,11 +600,18 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
                       <input
                         type="text"
                         required
+                        inputMode="numeric"
+                        autoComplete="cc-exp"
+                        maxLength={5}
                         value={payment.expiryDate}
-                        onChange={(e) =>
-                          setPayment({ ...payment, expiryDate: e.target.value })
-                        }
-                        placeholder="MM / AA"
+                        onChange={(e) => {
+                          const digits = e.target.value.replace(/\D/g, '').slice(0, 4);
+                          const expiryDate = digits.length > 2
+                            ? `${digits.slice(0, 2)}/${digits.slice(2)}`
+                            : digits;
+                          setPayment({ ...payment, expiryDate });
+                        }}
+                        placeholder="MM/AA"
                         className={`${inputGoldClass} tabular-nums`}
                       />
                     </div>
